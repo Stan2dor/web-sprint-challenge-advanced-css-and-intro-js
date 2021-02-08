@@ -252,7 +252,7 @@ function get20s(artists) {
   }
   return century;
 }
-console.log(get20s(artists));
+// console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -268,7 +268,7 @@ function removeArtist(artists, index) {
   artists.splice(index, 1);
   return artists.length;
 }
-console.log(removeArtist(artists));
+// console.log(removeArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -286,11 +286,18 @@ Use addArtist to do the following:
  
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(artists) {
+  artists.push({
+    "id": "20",
+    "name": "Stan Tudor",
+    "years": "1974 - 2021",
+    "genre": "Web Dev",
+    "nationality": "Romanian",
+    "bio": "lorem ipsum"
+  });
+  return artists;
 }
-
-
+// console.log(addArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
